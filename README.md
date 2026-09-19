@@ -3,9 +3,10 @@
 
 # Problems
 
-Problems: no README or manifest to go on; based on its name, this looks like a personal project — open the repository to confirm.
+An archived personal-notes repository whose only content is a single dated Chinese-language note analyzing why AI coding agents skip the spec-plan-code workflow, together with the candidate fixes it evaluated and shelved pending a better solution.
 
-[![CI](https://github.com/anyingiit/Problems/actions/workflows/ci.yml/badge.svg)](https://github.com/anyingiit/Problems/actions/workflows/ci.yml)
+**English** · [简体中文](README.zh-CN.md)
+
 [![License](https://img.shields.io/github/license/anyingiit/Problems)](LICENSE)
 
 [Report a bug](https://github.com/anyingiit/Problems/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/anyingiit/Problems/issues/new?template=feature_request.yml)
@@ -24,17 +25,19 @@ Problems: no README or manifest to go on; based on its name, this looks like a p
 
 ## About The Project
 
-Problems: no README or manifest to go on; based on its name, this looks like a personal project — open the repository to confirm.
+Problems is one of anyingiit's personal repositories. GitHub lists it as archived, and its entire content is a single file, `2026-08-24-ai-agent-workflow-discipline.md`, a dated note (in Chinese) that records a recurring failure: AI coding agents (the note names OpenCode plus the superpowers skill set) sometimes skip the intended spec → plan → code discipline, write a plan before a spec and then back-fill the spec to match it, or simply forget to invoke the skills meant to enforce the sequence. The note works through the likely causes at two levels — instruction drift and "lost in the middle" effects documented in the literature it cites, and the practical limits of prompt-only rules versus mechanical gates — tabulates five candidate fixes it evaluated (prompt files, path permissions, plugin-level tool gating, a dedicated state-machine tool, and a second LLM acting as auditor) with each one's shortcomings, and concludes that no solution it tried is good enough yet. Its own status line marks it shelved, to be revisited only if a more fundamental fix appears.
 
-See the [open issues](https://github.com/anyingiit/Problems/issues) for planned features and known issues.
+There are no exercises, source files, or other notes alongside it — just this one entry.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Git
+- A text editor or Markdown viewer that can display Chinese text; the repository has no package manifest, dependency list, or build configuration of any kind.
 
 ### Installation
+
+There is no build step and nothing to install. Cloning the repository gets you a local copy of the note:
 
 ```sh
 git clone https://github.com/anyingiit/Problems.git
@@ -43,8 +46,10 @@ cd Problems
 
 ## Usage
 
+Open `2026-08-24-ai-agent-workflow-discipline.md` in your editor to read the analysis or add a follow-up entry once one of its trigger conditions is met:
+
 ```sh
-Problems --help
+$EDITOR 2026-08-24-ai-agent-workflow-discipline.md
 ```
 
 ## Contributing
